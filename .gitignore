@@ -1,9 +1,0 @@
-output.txt
-db.sqlite3
-media
-output
-# Python bytecode
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
