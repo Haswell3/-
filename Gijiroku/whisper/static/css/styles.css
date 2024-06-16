@@ -1,0 +1,40 @@
+/* static/css/styles.css */
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Kintoneライクなボタンスタイル */
+.btn-primary {
+    background-color: #4CAF50;
+    /* ボタンの背景色をKintoneライクに変更 */
+    color: #fff;
+    /* ボタンのテキストカラーを白に設定 */
+    border: none;
+    /* ボタンのボーダーをなしに設定 */
+    padding: 10px 20px;
+    /* ボタンのパディングを調整 */
+    cursor: pointer;
+    /* カーソルをポインターに変更 */
+    font-weight: bold;
+    /* テキストを太字にする */
+    border-radius: 4px;
+    /* ボーダーの角を丸くする */
+    transition: background-color 0.3s ease;
+    /* ホバー時のトランジションを追加 */
+    margin-top: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    /* ホバー時の背景色を変更 */
+}

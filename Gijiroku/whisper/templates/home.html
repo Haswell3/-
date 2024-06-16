@@ -1,0 +1,30 @@
+<!-- templates/home.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="button-container"> <!-- ボタンを囲むdivを追加 -->
+            <!-- 音声アップロード用のフォーム -->
+            <form action="{% url 'upload_audio' %}" method="get" class="button-form">
+                <button type="submit" class="btn-primary">文字起こし</button>
+            </form>
+
+            <!-- テキストアップロード用のフォーム -->
+            <form action="{% url 'upload_text' %}" method="get" class="button-form">
+                <button type="submit" class="btn-primary">LangChain作成</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
